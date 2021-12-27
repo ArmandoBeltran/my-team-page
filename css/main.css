@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px; 
+}
+header span {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: PT Serif; 
+}
+.title-info {
+    font-size: 20px; 
+    font-weight: 700;
+}
+.text-info {
+    margin-top: 5px; 
+}
+
+#team {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    display: flex; 
+}
+.pic-name figcaption {
+    font-weight: 600;
+    font-size: 20px; 
+}
+.pic-name img {
+    max-width: 300px; 
+    max-height: 426.5px; 
+    min-width: 100px;
+}
+figure p {
+    margin: auto; 
+    transform: translateY(30px) translateX(-10px) rotate(90deg);
+} 
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+.margin-top {
+    margin-top: 100px; 
+}
+
+@media (max-width: 982px) {
+    header {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #team {
+        display: flex;
+        justify-content: center;
+    }
+
+    .team-member {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 902px) {
+    #team {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .team-member {
+        width: 40%;  
+    }
+}
+
+
